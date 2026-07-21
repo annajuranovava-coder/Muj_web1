@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ochrana osobních údajů – Anna Juranová</title>
+  <meta name="description"
+    content="Zásady zpracování osobních údajů (GDPR) na webu Anny Juranové – virtuální asistentky a webařky." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://annajuranova.cz/gdpr" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://annajuranova.cz/gdpr" />
+  <meta property="og:title" content="Ochrana osobních údajů – Anna Juranová" />
+  <meta property="og:description" content="Zásady zpracování osobních údajů (GDPR) na webu Anny Juranové." />
+  <meta property="og:image" content="https://annajuranova.cz/Obrazky/hero_sekce.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Kalam:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== DEKORATIVNÍ AKVARELOVÉ SKVRNY NA CELÉ STRÁNCE ========== -->
+  <div class="watercolor-bg" aria-hidden="true">
+    <div class="wc-blob wc-blob--1"></div>
+    <div class="wc-blob wc-blob--2"></div>
+    <div class="wc-blob wc-blob--3"></div>
+    <div class="wc-blob wc-blob--4"></div>
+    <div class="wc-blob wc-blob--5"></div>
+    <div class="wc-blob wc-blob--6"></div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Hlavní navigace">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo" aria-label="Anna Juranová – domů">
+        <span class="navbar__logo-text">
+          <span class="navbar__logo-name">Anna Juranová</span>
+        </span>
+      </a>
+      <ul class="navbar__links" id="nav-links" role="list">
+        <li><a href="/muj-pribeh" class="navbar__link">Můj příběh</a></li>
+        <li><a href="/virtualni-asistentka" class="navbar__link">Virtuální asistentka</a></li>
+        <li><a href="/tvorba-webu" class="navbar__link">Tvorba webu</a></li>
+        <li><a href="/faq" class="navbar__link">FAQ</a></li>
+        <li><a href="/kontakt" class="navbar__link navbar__link--cta">Kontakt</a></li>
+      </ul>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== OCHRANA OSOBNÍCH ÚDAJŮ ========== -->
+  <section class="section section--top-offset" id="gdpr" aria-labelledby="gdpr-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <h1 class="section-title" id="gdpr-heading">Ochrana osobních údajů</h1>
+      </div>
+
+      <div class="legal-content reveal">
+        <p>Níže naleznete zásady zpracování osobních údajů, které popisují, jak zpracovávám osobní údaje, jež mi
+          poskytnete při návštěvě mých webových stránek www.annajuranova.cz, využívání mých služeb nebo při
+          vzájemné komunikaci.</p>
+        <p>Osobní údaje zpracovávám v&nbsp;souladu s&nbsp;platnými a účinnými právními předpisy, zejména v&nbsp;souladu
+          s&nbsp;nařízením Evropského parlamentu a Rady (EU) 2016/679 – obecné nařízení o ochraně osobních údajů
+          (dále jen „GDPR“) a v&nbsp;souladu se zákonem č.&nbsp;110/2019&nbsp;Sb., o zpracování osobních údajů.</p>
+        <p>Účelem tohoto dokumentu je informovat Vás o tom, jaké osobní údaje zpracovávám, za jakým účelem, na jakém
+          právním základě, jak dlouho je uchovávám a jaká máte v&nbsp;souvislosti s&nbsp;jejich zpracováním práva.</p>
+
+        <p><strong>Obsah tohoto dokumentu:</strong></p>
+        <ul>
+          <li><a href="#spravce">I. Správce osobních údajů</a> – moje identifikační a kontaktní údaje</li>
+          <li><a href="#zdroj">II. Zdroj osobních údajů</a> – odkud získávám Vaše osobní údaje</li>
+          <li><a href="#kategorie">III. Kategorie osobních údajů a požadavek na jejich poskytnutí</a> – které osobní
+            údaje o Vás zpracovávám, zda máte povinnost mi je poskytnout a jaký je důsledek jejich neposkytnutí</li>
+          <li><a href="#ucely">IV. Účely a doba zpracování</a> – k jakým účelům a po jakou dobu Vaše osobní údaje
+            zpracovávám a co mě k tomu opravňuje</li>
+          <li><a href="#automatizovane">V. Automatizované rozhodování, vč. profilování</a> – zda z mojí strany
+            dochází k automatizovanému individuálnímu rozhodování, vč. profilování</li>
+          <li><a href="#cookies">VI. Cookies</a> – které cookies používám</li>
+          <li><a href="#prijemci">VII. Příjemci osobních údajů</a> – komu Vaše osobní údaje zpřístupňuji</li>
+          <li><a href="#predavani">VIII. Předávání osobních údajů do třetí země nebo mezinárodní organizaci</a> –
+            zda Vaše osobní údaje budou předány do země mimo Evropskou unii</li>
+          <li><a href="#zabezpeceni">IX. Zabezpečení osobních údajů</a> – která technická a organizační opatření
+            k zabezpečení Vašich osobních údajů jsem přijala</li>
+          <li><a href="#prava">X. Vaše práva</a> – jaká máte práva ve vztahu ke zpracování osobních údajů</li>
+          <li><a href="#zaverecna">XI. Závěrečná ustanovení</a> – účinnost tohoto dokumentu a možnost jeho změny</li>
+        </ul>
+
+        <h2 id="spravce">I. Správce osobních údajů</h2>
+        <p>Správcem osobních údajů je:<br />
+          <strong>Anna Juranová</strong><br />
+          Zapsána v&nbsp;živnostenském rejstříku<br />
+          IČ: 24385026<br />
+          Sídlo: Jabloňová 2669<br />
+          E-mail: <a href="mailto:info@annajuranova.cz">info@annajuranova.cz</a></p>
+
+        <h2 id="zdroj">II. Zdroj osobních údajů</h2>
+        <p>Osobní údaje zpracovávám pouze v&nbsp;rozsahu, v&nbsp;jakém mi je sami poskytnete.</p>
+        <p>Vaše osobní údaje získávám zejména prostřednictvím poptávkového formuláře na mých webových stránkách,
+          e-mailové komunikace, rezervačního systému pro sjednání konzultace, sociálních sítí nebo při jiné
+          vzájemné komunikaci.</p>
+        <p>Pokud se rozhodnete využít mé služby, mohou být osobní údaje získány také v&nbsp;průběhu naší
+          spolupráce.</p>
+
+        <h2 id="kategorie">III. Kategorie osobních údajů a požadavek na jejich poskytnutí</h2>
+        <p>1. V&nbsp;nezbytném rozsahu zpracovávám zejména tyto osobní údaje:</p>
+        <ul>
+          <li>jméno a příjmení,</li>
+          <li>obchodní firmu (je-li relevantní),</li>
+          <li>IČO a DIČ (pokud jste podnikatel),</li>
+          <li>fakturační adresu,</li>
+          <li>e-mailovou adresu,</li>
+          <li>telefonní číslo (pokud mi jej poskytnete),</li>
+          <li>platební údaje,</li>
+          <li>IP adresu,</li>
+          <li>informace o objednaných službách,</li>
+          <li>obsah vzájemné komunikace a další informace, které mi v&nbsp;průběhu spolupráce dobrovolně
+            poskytnete.</li>
+        </ul>
+        <p>Pokud mi udělíte souhlas se zveřejněním reference, mohu zpracovávat také Vaše jméno, název firmy,
+          fotografii, logo nebo jiné podklady, které mi za tímto účelem poskytnete.</p>
+        <p>2. Poskytnutí výše uvedených osobních údajů je nezbytné pro vzájemnou komunikaci, uzavření smlouvy
+          a poskytnutí objednaných služeb. Pokud mi tyto údaje neposkytnete, nemusí být možné uzavřít smlouvu nebo
+          Vám služby poskytnout.</p>
+        <p>V&nbsp;případech, kdy je zpracování založeno na Vašem souhlasu, je poskytnutí osobních údajů dobrovolné
+          a svůj souhlas můžete kdykoli odvolat.</p>
+
+        <h2 id="ucely">IV. Účely a doba zpracování</h2>
+
+        <h3>A. Zpracování osobních údajů pro účely uzavření a splnění smlouvy</h3>
+        <p>1. Vaše osobní údaje zpracovávám za účelem uzavření smlouvy a plnění smlouvy uzavřené mezi námi, zejména
+          pro vzájemnou komunikaci před uzavřením smlouvy i během spolupráce, poskytnutí objednaných služeb,
+          vystavení daňových dokladů a přijetí úhrady.</p>
+        <p>2. Právním základem pro zpracování osobních údajů je splnění smlouvy uzavřené mezi námi a provedení
+          opatření přijatých před uzavřením smlouvy na Vaši žádost podle čl.&nbsp;6 odst.&nbsp;1 písm.&nbsp;b)
+          GDPR.</p>
+        <p>3. Osobní údaje pro tento účel zpracovávám po dobu trvání smluvního vztahu. Po jeho skončení mohou být
+          některé osobní údaje dále zpracovávány za účelem splnění právních povinností nebo ochrany mých
+          oprávněných zájmů podle bodů B a C této kapitoly.</p>
+
+        <h3>B. Zpracování osobních údajů pro účely splnění právních povinností</h3>
+        <p>1. Vaše osobní údaje zpracovávám také za účelem splnění právních povinností, které mi ukládají obecně
+          závazné právní předpisy, zejména v&nbsp;oblasti účetnictví a daňových povinností.</p>
+        <p>2. Právním základem pro zpracování osobních údajů je splnění právní povinnosti podle čl.&nbsp;6
+          odst.&nbsp;1 písm.&nbsp;c) GDPR.</p>
+        <p>3. Osobní údaje zpracovávám po dobu stanovenou příslušnými právními předpisy.</p>
+
+        <h3>C. Zpracování osobních údajů pro účely ochrany práv a vymáhání nároků</h3>
+        <p>1. Vaše osobní údaje mohu zpracovávat také za účelem ochrany svých práv a oprávněných zájmů, zejména pro
+          případ uplatnění nebo obhajoby právních nároků vyplývajících ze smluvního vztahu nebo vzájemné
+          komunikace.</p>
+        <p>2. Právním základem pro zpracování osobních údajů je můj oprávněný zájem podle čl.&nbsp;6 odst.&nbsp;1
+          písm.&nbsp;f) GDPR.</p>
+        <p>3. Pro tento účel osobní údaje zpracovávám po dobu trvání smluvního vztahu a následně po dobu 5&nbsp;let
+          od jeho ukončení, případně po dobu 5&nbsp;let od poslední vzájemné komunikace, pokud k&nbsp;uzavření
+          smlouvy nedošlo.</p>
+
+        <h3>D. Zpracování osobních údajů na základě Vašeho souhlasu</h3>
+        <p>1. V&nbsp;případech, kdy to vyžaduje právní předpis nebo kdy není možné zpracovávat osobní údaje na
+          jiném právním základě, budu Vaše osobní údaje zpracovávat pouze na základě Vašeho souhlasu.</p>
+        <p>2. Na základě Vašeho souhlasu mohu zpracovávat osobní údaje zejména za účelem zveřejnění Vaší reference,
+          obchodního jména, loga společnosti nebo dalších podkladů, které mi za tímto účelem dobrovolně poskytnete,
+          na mých webových stránkách nebo sociálních sítích.</p>
+        <p>3. Před udělením souhlasu Vás vždy informuji o tom, jaké osobní údaje budou zpracovávány, za jakým
+          účelem a po jakou dobu.</p>
+        <p>4. Svůj souhlas můžete kdykoli odvolat prostřednictvím e-mailu uvedeného v&nbsp;těchto zásadách.
+          Odvoláním souhlasu není dotčena zákonnost zpracování osobních údajů provedeného před jeho odvoláním.</p>
+
+        <h2 id="automatizovane">V. Automatizované rozhodování a profilování</h2>
+        <p>Při zpracování Vašich osobních údajů nedochází k&nbsp;automatizovanému individuálnímu rozhodování ani
+          profilování ve smyslu čl.&nbsp;22 GDPR.</p>
+
+        <h2 id="cookies">VI. Cookies</h2>
+        <p>1. Při návštěvě mých webových stránek používám soubory cookies a obdobné technologie. Cookies jsou malé
+          datové soubory ukládané ve Vašem zařízení, které umožňují správné fungování webových stránek a pomáhají
+          mi analyzovat jejich používání.</p>
+        <p>2. Používám:</p>
+        <ul>
+          <li><strong>technické a nezbytné cookies</strong>, které jsou nutné pro správné fungování webových
+            stránek. Tyto cookies mohou být používány bez Vašeho souhlasu;</li>
+          <li><strong>analytické cookies</strong>, které využívám za účelem analýzy návštěvnosti a používání
+            webových stránek prostřednictvím služby Google Analytics poskytované společností Google Ireland
+            Limited. Tyto cookies používám pouze na základě Vašeho předchozího souhlasu.</li>
+        </ul>
+        <p>3. Používání analytických cookies můžete povolit nebo odmítnout prostřednictvím nastavení cookies na
+          mých webových stránkách. Svůj souhlas můžete kdykoliv změnit nebo odvolat.</p>
+        <p>4. Používání cookies můžete také omezit nebo zakázat prostřednictvím nastavení svého internetového
+          prohlížeče.</p>
+
+        <h2 id="prijemci">VII. Příjemci osobních údajů</h2>
+        <p>1. Pokud předávám Vaše osobní údaje jiným osobám, dbám na to, aby byla zajištěna jejich odpovídající
+          ochrana a aby byly údaje zpracovávány pouze v&nbsp;nezbytném rozsahu.</p>
+        <p>2. Pro zajištění některých činností využívám služby externích poskytovatelů, kteří mohou při poskytování
+          svých služeb přicházet do kontaktu s&nbsp;Vašimi osobními údaji. Tito poskytovatelé zpracovávají osobní
+          údaje v&nbsp;souladu s&nbsp;platnými právními předpisy a zavazují se k&nbsp;jejich ochraně.</p>
+        <p>3. Jedná se zejména o následující poskytovatele:</p>
+        <ul>
+          <li><strong>Webhosting a doména:</strong> Webkitty, provozovaný společností SOFTLABS CZECH s.r.o.,
+            IČ 02806533;</li>
+          <li><strong>Analytické nástroje:</strong> Google Analytics, poskytovaný společností Google Ireland
+            Limited;</li>
+          <li><strong>Kontaktní formulář:</strong> Formspree, provozovaný společností Formspree, Inc., 309 East
+            21st Street, Room 3331, Austin, TX 78705, USA;</li>
+          <li><strong>Rezervační nástroj:</strong> Calendly, provozovaný společností Calendly, LLC, 115 E Main St.,
+            Ste A1B, Buford, GA 30518, USA.</li>
+        </ul>
+        <p>4. Vaše osobní údaje mohou být zpřístupněny také příslušným správním orgánům nebo soudům, pokud mi
+          takovou povinnost ukládají právní předpisy nebo pokud je to nezbytné k&nbsp;ochraně mých práv
+          a oprávněných zájmů.</p>
+        <p>5. Pokud v&nbsp;budoucnu začnu využívat další služby nebo aplikace třetích stran, budu při jejich výběru
+          dbát na to, aby poskytovaly odpovídající úroveň zabezpečení a ochrany osobních údajů.</p>
+
+        <h2 id="predavani">VIII. Předávání osobních údajů do třetí země nebo mezinárodní organizaci</h2>
+        <p>1. Při využívání některých služeb třetích stran může docházet k&nbsp;předávání osobních údajů do zemí
+          mimo Evropský hospodářský prostor.</p>
+        <p>2. V&nbsp;souvislosti s&nbsp;používáním nástrojů Google Analytics, Formspree a Calendly může dojít
+          ke zpracování osobních údajů poskytovateli těchto služeb, kteří mohou mít sídlo nebo využívat
+          subdodavatele ve třetích zemích, zejména ve Spojených státech amerických.</p>
+        <p>3. Předávání osobních údajů do třetích zemí probíhá pouze za podmínek stanovených platnými právními
+          předpisy o ochraně osobních údajů, zejména na základě rozhodnutí Evropské komise o odpovídající ochraně,
+          standardních smluvních doložek Evropské komise nebo jiných vhodných záruk podle GDPR.</p>
+        <p>4. Více informací o způsobu zpracování osobních údajů jednotlivými poskytovateli naleznete v&nbsp;jejich
+          zásadách ochrany osobních údajů:</p>
+        <ul>
+          <li>Google: <a href="https://policies.google.com/privacy" target="_blank"
+              rel="noopener">policies.google.com/privacy</a></li>
+          <li>Formspree: <a href="https://formspree.io/legal/privacy-policy/" target="_blank"
+              rel="noopener">formspree.io/legal/privacy-policy</a></li>
+          <li>Calendly: <a href="https://calendly.com/legal/privacy-notice" target="_blank"
+              rel="noopener">calendly.com/legal/privacy-notice</a></li>
+        </ul>
+
+        <h2 id="zabezpeceni">IX. Zabezpečení osobních údajů</h2>
+        <p>1. Jako správce osobních údajů přijímám vhodná technická a organizační opatření k&nbsp;zabezpečení
+          Vašich osobních údajů tak, aby nemohlo dojít k&nbsp;jejich náhodnému nebo protiprávnímu zničení, ztrátě,
+          změně, neoprávněnému zpřístupnění nebo jinému neoprávněnému zpracování. Přijatá opatření odpovídají
+          povaze, rozsahu a účelům zpracování osobních údajů a míře rizika pro práva a svobody fyzických osob.</p>
+        <p>2. K zabezpečení osobních údajů používám zejména tato opatření:</p>
+        <ul>
+          <li>ochranu přístupu k zařízením, na kterých zpracovávám osobní údaje, prostřednictvím silných hesel
+            a zabezpečeného přístupu;</li>
+          <li>používání aktualizovaného operačního systému a bezpečnostních opatření pro ochranu zařízení;</li>
+          <li>omezení přístupu k osobním údajům pouze na nezbytný rozsah;</li>
+          <li>využívání služeb poskytovatelů, kteří zajišťují odpovídající úroveň zabezpečení osobních údajů;</li>
+          <li>zachovávání mlčenlivosti o osobních údajích a bezpečnostních opatřeních.</li>
+        </ul>
+        <p>3. Přijatá technická a organizační opatření průběžně vyhodnocuji a v&nbsp;případě potřeby upravuji tak,
+          aby odpovídala aktuálním rizikům a způsobu zpracování osobních údajů.</p>
+
+        <h2 id="prava">X. Vaše práva</h2>
+        <p>Ve vztahu ke zpracování Vašich osobních údajů máte následující práva:</p>
+
+        <h3>1. Právo na přístup k osobním údajům (čl.&nbsp;15 GDPR)</h3>
+        <p>Máte právo získat informace o tom, zda zpracovávám Vaše osobní údaje, a pokud ano, máte právo získat
+          přístup k&nbsp;těmto osobním údajům a informace o jejich zpracování.</p>
+
+        <h3>2. Právo na opravu nebo doplnění osobních údajů (čl.&nbsp;16 GDPR)</h3>
+        <p>Máte právo požadovat opravu nepřesných osobních údajů, které se Vás týkají, případně doplnění neúplných
+          osobních údajů s&nbsp;ohledem na účel jejich zpracování.</p>
+
+        <h3>3. Právo na výmaz osobních údajů (čl.&nbsp;17 GDPR)</h3>
+        <p>Máte právo požadovat výmaz osobních údajů, které se Vás týkají, pokud jsou splněny podmínky stanovené
+          v&nbsp;čl.&nbsp;17 GDPR.</p>
+
+        <h3>4. Právo na omezení zpracování osobních údajů (čl.&nbsp;18 GDPR)</h3>
+        <p>Pokud jsou splněny podmínky stanovené v&nbsp;čl.&nbsp;18 GDPR, máte právo požadovat omezení zpracování
+          Vašich osobních údajů.</p>
+
+        <h3>5. Právo na přenositelnost osobních údajů (čl.&nbsp;20 GDPR)</h3>
+        <p>Pokud je zpracování Vašich osobních údajů prováděno automatizovaně a je založeno na Vašem souhlasu nebo
+          na smlouvě, máte právo získat své osobní údaje ve strukturovaném, běžně používaném a strojově čitelném
+          formátu a předat je jinému správci.</p>
+
+        <h3>6. Právo vznést námitku proti zpracování osobních údajů (čl.&nbsp;21 GDPR)</h3>
+        <p>Pokud jsou Vaše osobní údaje zpracovávány na základě oprávněného zájmu, máte právo z&nbsp;důvodů
+          týkajících se Vaší konkrétní situace vznést námitku proti takovému zpracování.</p>
+        <p>Pokud zpracovávám Vaše osobní údaje pro účely přímého marketingu, máte právo kdykoliv vznést námitku
+          proti tomuto zpracování.</p>
+
+        <h3>7. Právo odvolat souhlas se zpracováním osobních údajů</h3>
+        <p>Pokud zpracovávám Vaše osobní údaje na základě Vašeho souhlasu, máte právo svůj souhlas kdykoliv
+          odvolat. Odvoláním souhlasu není dotčena zákonnost zpracování založeného na souhlasu před jeho
+          odvoláním.</p>
+
+        <h3>8. Právo podat stížnost k Úřadu pro ochranu osobních údajů</h3>
+        <p>Pokud se domníváte, že při zpracování Vašich osobních údajů dochází k&nbsp;porušení právních předpisů,
+          máte právo podat stížnost k&nbsp;Úřadu pro ochranu osobních údajů (<a href="https://www.uoou.cz"
+            target="_blank" rel="noopener">www.uoou.cz</a>).</p>
+
+        <p>2. Své práva můžete uplatnit prostřednictvím kontaktních údajů uvedených v&nbsp;těchto zásadách ochrany
+          osobních údajů. Před vyřízením Vaší žádosti mohu požadovat přiměřené ověření Vaší totožnosti, abych
+          zabránila neoprávněnému poskytnutí osobních údajů.</p>
+        <p>3. Více informací o právech subjektů údajů naleznete na webových stránkách Úřadu pro ochranu osobních
+          údajů (<a href="https://www.uoou.cz" target="_blank" rel="noopener">www.uoou.cz</a>).</p>
+
+        <h2 id="zaverecna">XI. Závěrečná ustanovení</h2>
+        <p>1. Tyto zásady ochrany osobních údajů mohu v&nbsp;přiměřeném rozsahu upravit nebo změnit, zejména
+          v&nbsp;případě změny způsobu zpracování osobních údajů nebo využívaných služeb. Aktuální znění těchto
+          zásad je vždy dostupné na mých webových stránkách.</p>
+        <p>2. Tyto zásady ochrany osobních údajů nabývají účinnosti dnem 21.&nbsp;7.&nbsp;2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__watercolor" aria-hidden="true">
+      <div class="footer__wc-blob footer__wc-blob--1"></div>
+      <div class="footer__wc-blob footer__wc-blob--2"></div>
+    </div>
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col">
+          <div class="footer__logo">Anna Juranová</div>
+          <p class="footer__tagline">Parťačka pro podnikatelky, které svou práci dělají srdcem.</p>
+          <div class="footer__legal">
+            <p>IČO: 24385026</p>
+            <p>Fyzická osoba podnikající podle živnostenského zákona</p>
+            <p>Sídlo: Jabloňová 2669, 438&nbsp;01 Žatec</p>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col--cta">
+          <h3 class="footer__heading">Máte otázku?</h3>
+          <p class="footer__cta-text">Napište mi a&nbsp;domluvíme si nezávaznou online kávičku.</p>
+          <a href="/kontakt" class="btn btn--cta btn--expand">
+            <span class="btn__arrow btn__mail" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="#fff" stroke-width="1.8" />
+                <path d="M3.5 6l8.5 6.5L20.5 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="btn__text">Napsat mi</span>
+          </a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Kontakt</h3>
+          <a href="mailto:info@annajuranova.cz" class="footer__link footer__link--contact">
+            <span class="footer__link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.8" />
+                <path d="M3.5 6l8.5 6.5L20.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            info@annajuranova.cz
+          </a>
+          <h3 class="footer__heading footer__heading--social">Sledujte mě</h3>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/annajuranova/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://www.facebook.com/virtualniasistentkaanna" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.footer__grid -->
+
+      <div class="footer__bottom">
+        <p>© 2026 Anna Juranová. Všechna práva vyhrazena.</p>
+        <div class="footer__bottom-links">
+          <a href="/gdpr" class="footer__link" aria-current="page">Ochrana osobních údajů</a>
+          <a href="https://obchod.webkitty.cz/?id=180821" class="footer__partner-badge" target="_blank"
+            rel="noopener" aria-label="Miluji hosting Webkitty.cz">
+            <img src="Obrazky/odznak_miluji_webkitty.png" alt="Miluji hosting Webkitty.cz" width="600" height="234"
+              loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== COOKIE LIŠTA ========== -->
+  <div class="cookie-bar hidden" id="cookie-bar" role="dialog" aria-label="Souhlas s cookies" aria-modal="true"
+    aria-live="polite">
+    <div class="cookie-bar__inner">
+      <div class="cookie-bar__icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="14" cy="32" r="11" stroke="#a61f4d" stroke-width="2.2" fill="#fdf9f5" />
+          <circle cx="10" cy="28" r="1.6" fill="#a61f4d" />
+          <circle cx="18" cy="27" r="1.6" fill="#d4af37" />
+          <circle cx="19" cy="35" r="1.6" fill="#a61f4d" />
+          <circle cx="9" cy="36" r="1.6" fill="#d4af37" />
+          <circle cx="14" cy="32" r="1.4" fill="#d4af37" />
+          <path d="M27 5L45 5L43 43L29 43Z" stroke="#a61f4d" stroke-width="2.2" stroke-linejoin="round" />
+          <path d="M27.9 14L44.1 14L42.4 42.3L29.6 42.3Z" fill="#fdf9f5" />
+          <path d="M27.9 14L44.1 14" stroke="#a61f4d" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="cookie-bar__text">Cookies k&nbsp;webu podávám ráda, ideálně se sklenicí mléka. Pomáhají mi zjistit,
+        co&nbsp;Vás na&nbsp;webu baví, a&nbsp;web pro&nbsp;Vás dělat lepší. Vy máte poslední slovo.</p>
+      <div class="cookie-bar__btns">
+        <button class="btn btn--sm btn--ghost" id="cookie-accept">Přijmout</button>
+        <button class="btn btn--sm btn--ghost" id="cookie-reject">Odmítnout</button>
+        <button class="btn btn--sm btn--outline" id="cookie-settings">Nastavit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== COOKIE NASTAVENÍ (MODAL) ========== -->
+  <div class="cookie-modal hidden" id="cookie-modal" role="dialog" aria-label="Nastavení cookies" aria-modal="true">
+    <div class="cookie-modal__overlay" id="cookie-modal-overlay"></div>
+    <div class="cookie-modal__box">
+      <button class="cookie-modal__close" id="cookie-modal-close" aria-label="Zavřít nastavení cookies">&times;</button>
+      <p class="cookie-modal__intro">Tady si můžete namíchat vlastní talíř cookies – co si dáte, je jen na Vás. 🍪</p>
+
+      <div class="cookie-modal__item">
+        <div class="cookie-modal__item-head">
+          <h3 class="cookie-modal__item-title">Nezbytné cookies (vždy zapnuto, nelze vypnout)</h3>
+          <span class="cookie-modal__always">Vždy aktivní</span>
+        </div>
+        <p class="cookie-modal__item-text">Bez těch by web pořádně nefungoval – starají se třeba o to, aby se Vám nerozsypalo, co jste už vyplnili.</p>
+      </div>
+
+      <div class="cookie-modal__item">
+        <div class="cookie-modal__item-head">
+          <h3 class="cookie-modal__item-title">Analytické cookies</h3>
+          <label class="cookie-modal__switch">
+            <input type="checkbox" id="cookie-analytics-toggle" class="cookie-modal__switch-input">
+            <span class="cookie-modal__switch-track"></span>
+          </label>
+        </div>
+        <p class="cookie-modal__item-text">Pomáhají mi pochopit, jak web používáte a co má smysl vylepšit – žádná jména, jen čísla a grafy.</p>
+      </div>
+
+      <div class="cookie-modal__actions">
+        <button class="btn btn--sm btn--outline" id="cookie-modal-save">Uložit nastavení</button>
+        <button class="btn btn--sm btn--ghost" id="cookie-modal-accept-all">Přijmout vše</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>

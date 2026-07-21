@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\index.html\")",
+      "Skill(run)",
+      "Skill(run:*)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\Kurz šťastná VA.png\"\\); \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\reference.jpg\"\\); \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\tvorba_webu.jpeg\"\\); \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\kontakt.jpeg\"\\); \"$\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Get-Command chromium-cli -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npx -ErrorAction SilentlyContinue)",
+      "PowerShell(npx --yes playwright --version 2>&1)",
+      "PowerShell(Start-Sleep -Seconds 2; try { $r = Invoke-WebRequest -Uri \"http://localhost:8000/virtualni-asistentka.html\" -UseBasicParsing -TimeoutSec 5; \"Server bezi, status: $\\($r.StatusCode\\)\" } catch { \"Chyba: $_\" })",
+      "PowerShell(python -m http.server 8000)",
+      "PowerShell(Get-Command py -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command python3 -ErrorAction SilentlyContinue)",
+      "PowerShell(powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\_serve.ps1\")",
+      "PowerShell(Invoke-WebRequest -Uri http://localhost:8000/index.html -UseBasicParsing -TimeoutSec 5)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Start-Sleep -Milliseconds 500; \"ok\")",
+      "PowerShell(powershell -File \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\_serve.ps1\")",
+      "PowerShell(Invoke-WebRequest -Uri http://localhost:8000/faq.html -UseBasicParsing -TimeoutSec 5)",
+      "PowerShell($img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\); \"Size: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\); \\(Get-Item \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\).Length / 1KB)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\); \"Size: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))"
+    ]
+  }
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Anna Juranová – Virtuální asistentka &amp; Tvorba webu</title>
+  <meta name="description"
+    content="Pomáhám srdcařkám v podnikání volněji dýchat – ať jde o zákaznickou péči, papírování, nebo web s duší. Virtuální asistentka a webařka Anna Juranová." />
+  <link rel="canonical" href="https://annajuranova.cz/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://annajuranova.cz/" />
+  <meta property="og:title" content="Anna Juranová – Virtuální asistentka &amp; Tvorba webu" />
+  <meta property="og:description"
+    content="Pomáhám srdcařkám v podnikání volněji dýchat – zákaznická péče, administrativa nebo web s duší." />
+  <meta property="og:image" content="https://annajuranova.cz/Obrazky/hero_sekce.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Kalam:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <!-- Structured data – LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Anna Juranová",
+    "description": "Virtuální asistentka a tvorba webů",
+    "url": "https://annajuranova.cz",
+    "email": "info@annajuranova.cz",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jabloňová 2669",
+      "addressLocality": "Žatec",
+      "postalCode": "438 01",
+      "addressCountry": "CZ"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ========== DEKORATIVNÍ AKVARELOVÉ SKVRNY NA CELÉ STRÁNCE ========== -->
+  <div class="watercolor-bg" aria-hidden="true">
+    <div class="wc-blob wc-blob--1"></div>
+    <div class="wc-blob wc-blob--2"></div>
+    <div class="wc-blob wc-blob--3"></div>
+    <div class="wc-blob wc-blob--4"></div>
+    <div class="wc-blob wc-blob--5"></div>
+    <div class="wc-blob wc-blob--6"></div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Hlavní navigace">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo" aria-label="Anna Juranová – domů" aria-current="page">
+        <span class="navbar__logo-text">
+          <span class="navbar__logo-name">Anna Juranová</span>        </span>
+      </a>
+      <ul class="navbar__links" id="nav-links" role="list">
+        <li><a href="/muj-pribeh" class="navbar__link">Můj příběh</a></li>
+        <li><a href="/virtualni-asistentka" class="navbar__link">Virtuální asistentka</a></li>
+        <li><a href="/tvorba-webu" class="navbar__link">Tvorba webu</a></li>
+        <li><a href="/faq" class="navbar__link">FAQ</a></li>
+        <li><a href="/kontakt" class="navbar__link navbar__link--cta">Kontakt</a></li>
+      </ul>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <!-- Akvarelové skvrny specificky pro hero -->
+    <div class="hero__watercolor hero__watercolor--1" aria-hidden="true"></div>
+    <div class="hero__watercolor hero__watercolor--2" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <!-- Levý sloupec – text -->
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">
+          Virtuální asistentka &amp;&nbsp;webařka
+        </p>
+
+        <h1 class="hero__title reveal">
+          Vaše parťačka&nbsp;–<br />
+          od&nbsp;administrativy<br />
+          <span class="hero__title-accent">po&nbsp;web s&nbsp;duší</span>
+        </h1>
+
+        <p class="hero__subtitle reveal">
+          Pomáhám srdcařkám v&nbsp;podnikání volněji dýchat – ať&nbsp;jde o&nbsp;zákaznickou péči,
+          papírování, nebo web, který přes vibecoding postavím tak, aby&nbsp;měl duši
+          a&nbsp;vyprávěl Váš příběh. Získáte zpátky čas a&nbsp;klid.
+          Já&nbsp;se postarám o&nbsp;zbytek.
+        </p>
+
+        <a href="/kontakt" class="btn btn--cta btn--expand reveal" id="hero-cta">
+          <span class="btn__text">Chci volněji dýchat</span>
+          <span class="btn__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="btn__wind-line btn__wind-line--1" d="M2 9h11.5a2.5 2.5 0 10-2.5-2.5" stroke="#fff"
+                stroke-width="1.8" stroke-linecap="round" />
+              <path class="btn__wind-line btn__wind-line--2" d="M2 15h14a3 3 0 11-3 3H7" stroke="#fff"
+                stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Pravý sloupec – foto s image mask -->
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="hero__image-frame">
+          <img src="Obrazky/hero_sekce (1).avif" alt="Anna Juranová – virtuální asistentka a webařka"
+            class="hero__photo" width="480" height="600" />
+          <!-- Dekorativní pruhy -->
+          <div class="hero__deco-ring"></div>
+          <div class="hero__deco-dot hero__deco-dot--1"></div>
+          <div class="hero__deco-dot hero__deco-dot--2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INTRO CARDS (4) ========== -->
+  <section class="intro section" id="intro" aria-labelledby="intro-heading">
+    <div class="container">
+      <div class="intro__grid">
+
+        <article class="intro-card reveal">
+          <div class="intro-card__icon-wrap">
+            <div class="lottie-icon" id="lottie-admin" aria-hidden="true">
+              <!-- Fallback ikona -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="9" width="24" height="34" rx="3" stroke="#a61f4d" stroke-width="2.5" fill="none" />
+                <rect x="18" y="6" width="12" height="6" rx="2" fill="#d4af37" />
+                <path d="M17 21h14M17 28h14M17 35h8" stroke="#a61f4d" stroke-width="2.5" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="intro-card__title">7&nbsp;let v&nbsp;administrativě a&nbsp;zákaznické péči</h3>
+          <p class="intro-card__text">Prošla jsem si pozicemi jako back office i&nbsp;koordinátorka dálkového studia.
+            Vím, že administrativa a&nbsp;zákaznická péče jsou nepostradatelný základ každého podnikání – a&nbsp;vím,
+            jak se o&nbsp;ně postarat.</p>
+        </article>
+
+        <article class="intro-card reveal">
+          <div class="intro-card__icon-wrap">
+            <div class="lottie-icon" id="lottie-web" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="9" width="30" height="21" rx="2.5" stroke="#a61f4d" stroke-width="2.5" fill="none" />
+                <path d="M5 37h38l-3 4H8l-3-4z" fill="#d4af37" />
+                <path d="M19 16l-4 4 4 4M29 16l4 4-4 4" stroke="#a61f4d" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="intro-card__title">Tvořím weby s&nbsp;duší</h3>
+          <p class="intro-card__text">Neslibuju weby hotové přes noc. Než začnu cokoli stavět, chci znát Váš příběh.
+            Jedině tak může vzniknout web, který bude opravdu Váš.</p>
+        </article>
+
+        <article class="intro-card reveal">
+          <div class="intro-card__icon-wrap">
+            <div class="lottie-icon" id="lottie-empathy" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 38s-14-9-14-19a8 8 0 0116 0 8 8 0 0116 0c0 10-14 19-14 19" fill="#a61f4d" opacity="0.15" />
+                <path d="M24 38s-14-9-14-19a8 8 0 0116 0 8 8 0 0116 0c0 10-14 19-14 19" stroke="#a61f4d"
+                  stroke-width="2.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="intro-card__title">Empatický a&nbsp;individuální přístup</h3>
+          <p class="intro-card__text">Nejste pro mě jen další klientka. Zajímá mě Váš příběh, Vaše podnikání i&nbsp;to,
+            co Vás trápí. Protože jen tak můžu být skutečnou parťačkou.</p>
+        </article>
+
+        <article class="intro-card reveal">
+          <div class="intro-card__icon-wrap">
+            <div class="lottie-icon" id="lottie-chaos" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="17" stroke="#a61f4d" stroke-width="2.5" fill="none" />
+                <path d="M24 9l4.5 15h-9L24 9z" fill="#a61f4d" />
+                <path d="M24 39l4.5-15h-9L24 39z" fill="#d4af37" />
+                <circle cx="24" cy="24" r="2.5" fill="#fdf9f5" stroke="#a61f4d" stroke-width="1.5" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="intro-card__title">Průvodkyně digitálním chaosem</h3>
+          <p class="intro-card__text">Ztrácíte se v&nbsp;e‑mailech nebo papírování? Nebo nevíte, jak začít delegovat?
+            Od&nbsp;toho tu&nbsp;jsem já – provedu Vás krok za&nbsp;krokem.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JAK VÁM MŮŽU POMOCT? ========== -->
+  <section class="help section" id="help" aria-labelledby="help-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" id="help-heading">Jak Vám můžu pomoct?</h2>
+        <p class="section-subtitle">Dvě služby, jeden přístup – parťačka, které záleží na&nbsp;Vašem příběhu.</p>
+      </div>
+      <div class="help__grid">
+
+        <article class="help-card reveal">
+          <div class="help-card__body">
+            <h3 class="help-card__title">Virtuální asistentka</h3>
+            <p class="help-card__text">Administrativa, zákaznická péče, osobní agenda – převezmu to, co&nbsp;Vám bere
+              čas a&nbsp;energii. Abyste konečně mohla volněji dýchat.</p>
+            <a href="/virtualni-asistentka" class="btn btn--ghost btn--expand">
+              <span class="btn__text">Chci vědět víc</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="help-card reveal">
+          <div class="help-card__body">
+            <h3 class="help-card__title">Tvorba webů</h3>
+            <p class="help-card__text">Web bez duše je jako zahrada bez péče. Pojďme to změnit – postavíme web
+              od&nbsp;základů, nebo vdechneme duši tomu, co&nbsp;už máte.</p>
+            <a href="/tvorba-webu" class="btn btn--ghost btn--expand">
+              <span class="btn__text">Chci vědět víc</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__watercolor" aria-hidden="true">
+      <div class="footer__wc-blob footer__wc-blob--1"></div>
+      <div class="footer__wc-blob footer__wc-blob--2"></div>
+    </div>
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col">
+          <div class="footer__logo">Anna Juranová</div>
+          <p class="footer__tagline">Parťačka pro podnikatelky, které svou práci dělají srdcem.</p>
+          <div class="footer__legal">
+            <p>IČO: 24385026</p>
+            <p>Fyzická osoba podnikající podle živnostenského zákona</p>
+            <p>Sídlo: Jabloňová 2669, 438&nbsp;01 Žatec</p>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col--cta">
+          <h3 class="footer__heading">Máte otázku?</h3>
+          <p class="footer__cta-text">Napište mi a&nbsp;domluvíme si nezávaznou online kávičku.</p>
+          <a href="/kontakt" class="btn btn--cta btn--expand">
+            <span class="btn__arrow btn__mail" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="#fff" stroke-width="1.8" />
+                <path d="M3.5 6l8.5 6.5L20.5 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="btn__text">Napsat mi</span>
+          </a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__heading">Kontakt</h3>
+          <a href="mailto:info@annajuranova.cz" class="footer__link footer__link--contact">
+            <span class="footer__link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.8" />
+                <path d="M3.5 6l8.5 6.5L20.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            info@annajuranova.cz
+          </a>
+          <h3 class="footer__heading footer__heading--social">Sledujte mě</h3>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/annajuranova/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://www.facebook.com/virtualniasistentkaanna" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.footer__grid -->
+
+      <div class="footer__bottom">
+        <p>© 2026 Anna Juranová. Všechna práva vyhrazena.</p>
+        <div class="footer__bottom-links">
+          <a href="/gdpr" class="footer__link">Ochrana osobních údajů</a>
+          <a href="https://obchod.webkitty.cz/?id=180821" class="footer__partner-badge" target="_blank"
+            rel="noopener" aria-label="Miluji hosting Webkitty.cz">
+            <img src="Obrazky/odznak_miluji_webkitty.png" alt="Miluji hosting Webkitty.cz" width="600" height="234"
+              loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== PLOVOUCÍ TLAČÍTKO ========== -->
+  <a href="https://calendly.com/anna-juranova-va/30min?primary_color=a61f4d&text_color=1a1a1a&background_color=fdf9f5" class="floating-cta js-calendly-popup" aria-label="Domluvit online kávičku">
+    <span class="floating-cta__icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 21h21v9a10 10 0 01-10 10h-1a10 10 0 01-10-10v-9z" stroke="#fff" stroke-width="2.5" />
+        <path d="M32 23h2.5a5 5 0 010 10H32" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+        <path class="floating-cta__steam floating-cta__steam--1" d="M16 9c-1.2 2 1.2 3 0 5" stroke="#d4af37"
+          stroke-width="2.2" stroke-linecap="round" />
+        <path class="floating-cta__steam floating-cta__steam--2" d="M22.5 9c-1.2 2 1.2 3 0 5" stroke="#d4af37"
+          stroke-width="2.2" stroke-linecap="round" />
+        <path class="floating-cta__steam floating-cta__steam--3" d="M29 9c-1.2 2 1.2 3 0 5" stroke="#d4af37"
+          stroke-width="2.2" stroke-linecap="round" />
+      </svg>
+    </span>
+    <span class="floating-cta__text">Domluvit online kávičku</span>
+  </a>
+
+  <!-- ========== COOKIE LIŠTA ========== -->
+  <div class="cookie-bar hidden" id="cookie-bar" role="dialog" aria-label="Souhlas s cookies" aria-modal="true"
+    aria-live="polite">
+    <div class="cookie-bar__inner">
+      <div class="cookie-bar__icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="14" cy="32" r="11" stroke="#a61f4d" stroke-width="2.2" fill="#fdf9f5" />
+          <circle cx="10" cy="28" r="1.6" fill="#a61f4d" />
+          <circle cx="18" cy="27" r="1.6" fill="#d4af37" />
+          <circle cx="19" cy="35" r="1.6" fill="#a61f4d" />
+          <circle cx="9" cy="36" r="1.6" fill="#d4af37" />
+          <circle cx="14" cy="32" r="1.4" fill="#d4af37" />
+          <path d="M27 5L45 5L43 43L29 43Z" stroke="#a61f4d" stroke-width="2.2" stroke-linejoin="round" />
+          <path d="M27.9 14L44.1 14L42.4 42.3L29.6 42.3Z" fill="#fdf9f5" />
+          <path d="M27.9 14L44.1 14" stroke="#a61f4d" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="cookie-bar__text">Cookies k&nbsp;webu podávám ráda, ideálně se sklenicí mléka. Pomáhají mi zjistit,
+        co&nbsp;Vás na&nbsp;webu baví, a&nbsp;web pro&nbsp;Vás dělat lepší. Vy máte poslední slovo. Více v&nbsp;<a
+          href="/gdpr">zásadách ochrany osobních údajů</a>.</p>
+      <div class="cookie-bar__btns">
+        <button class="btn btn--sm btn--ghost" id="cookie-accept">Přijmout</button>
+        <button class="btn btn--sm btn--ghost" id="cookie-reject">Odmítnout</button>
+        <button class="btn btn--sm btn--outline" id="cookie-settings">Nastavit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== COOKIE NASTAVENÍ (MODAL) ========== -->
+  <div class="cookie-modal hidden" id="cookie-modal" role="dialog" aria-label="Nastavení cookies" aria-modal="true">
+    <div class="cookie-modal__overlay" id="cookie-modal-overlay"></div>
+    <div class="cookie-modal__box">
+      <button class="cookie-modal__close" id="cookie-modal-close" aria-label="Zavřít nastavení cookies">&times;</button>
+      <p class="cookie-modal__intro">Tady si můžete namíchat vlastní talíř cookies – co si dáte, je jen na Vás. 🍪</p>
+
+      <div class="cookie-modal__item">
+        <div class="cookie-modal__item-head">
+          <h3 class="cookie-modal__item-title">Nezbytné cookies (vždy zapnuto, nelze vypnout)</h3>
+          <span class="cookie-modal__always">Vždy aktivní</span>
+        </div>
+        <p class="cookie-modal__item-text">Bez těch by web pořádně nefungoval – starají se třeba o to, aby se Vám nerozsypalo, co jste už vyplnili.</p>
+      </div>
+
+      <div class="cookie-modal__item">
+        <div class="cookie-modal__item-head">
+          <h3 class="cookie-modal__item-title">Analytické cookies</h3>
+          <label class="cookie-modal__switch">
+            <input type="checkbox" id="cookie-analytics-toggle" class="cookie-modal__switch-input">
+            <span class="cookie-modal__switch-track"></span>
+          </label>
+        </div>
+        <p class="cookie-modal__item-text">Pomáhají mi pochopit, jak web používáte a co má smysl vylepšit – žádná jména, jen čísla a grafy.</p>
+      </div>
+
+      <div class="cookie-modal__actions">
+        <button class="btn btn--sm btn--outline" id="cookie-modal-save">Uložit nastavení</button>
+        <button class="btn btn--sm btn--ghost" id="cookie-modal-accept-all">Přijmout vše</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
