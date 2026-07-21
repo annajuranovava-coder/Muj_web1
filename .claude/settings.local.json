@@ -23,7 +23,9 @@
       "PowerShell(powershell -File \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\_serve.ps1\")",
       "PowerShell(Invoke-WebRequest -Uri http://localhost:8000/faq.html -UseBasicParsing -TimeoutSec 5)",
       "PowerShell($img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\); \"Size: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\); \\(Get-Item \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\).Length / 1KB)",
-      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\); \"Size: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))"
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\Obrazky\\\\odznak_miluji_webkitty.png\"\\); \"Size: $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Start-Sleep -Milliseconds 500; powershell -File \"c:\\\\Vibecoding\\\\Anna_Juranova1\\\\Muj_web1\\\\_serve.ps1\")",
+      "PowerShell(Invoke-WebRequest -Uri http://localhost:8000/virtualni-asistentka.html -UseBasicParsing -TimeoutSec 5)"
     ]
   }
 }
