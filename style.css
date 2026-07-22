@@ -248,7 +248,7 @@ button { font-family: var(--font); border: none; background: none; cursor: point
 }
 
 /* Všechen obsah nad pozadím */
-body > *:not(.watercolor-bg):not(.cookie-bar):not(.cookie-modal):not(.floating-cta):not(.calendly-overlay) { position: relative; z-index: 1; }
+body > *:not(.watercolor-bg):not(.cookie-bar):not(.cookie-modal):not(.floating-cta):not(.calendly-overlay):not(.navbar) { position: relative; z-index: 1; }
 
 /* ---- 6. SCROLL REVEAL ----------------------------------- */
 .reveal {
@@ -379,9 +379,7 @@ body > *:not(.watercolor-bg):not(.cookie-bar):not(.cookie-modal):not(.floating-c
               padding var(--dur) var(--ease);
 }
 .navbar.scrolled {
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.98);
   box-shadow: 0 2px 20px rgba(0,0,0,.07);
   padding: var(--sp-3) 0;
 }
@@ -1124,14 +1122,14 @@ body > *:not(.watercolor-bg):not(.cookie-bar):not(.cookie-modal):not(.floating-c
 }
 
 .testimonial__cta {
-  margin-top: var(--sp-8);
+  margin-top: var(--sp-5);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--sp-5);
 }
-.testimonial__cta--mt-9 { margin-top: var(--sp-9); }
+.testimonial__cta--mt-9 { margin-top: var(--sp-6); }
 .testimonial__cta p {
   font-size: var(--text-md);
   color: var(--c-muted);
@@ -1140,7 +1138,7 @@ body > *:not(.watercolor-bg):not(.cookie-bar):not(.cookie-modal):not(.floating-c
 }
 
 /* ---- 15. FAQ -------------------------------------------- */
-.faq-group + .faq-group { margin-top: var(--sp-9); }
+.faq-group + .faq-group { margin-top: var(--sp-6); }
 
 .faq__cols {
   display: grid;
@@ -1537,7 +1535,7 @@ p.contact__legal {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--c-primary);
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-2);
 }
 .footer__heading--social { margin-top: var(--sp-5); }
 
@@ -2219,26 +2217,58 @@ body > .floating-cta {
   .navbar__logo-name { font-size: 1.15rem; }
   .footer__logo { font-size: 1.1rem; }
 
+  /* Když je menu otevřené, pozadí navigace (za logem) ať navazuje na panel pod ním */
+  .navbar:has(.navbar__links.open) {
+    background-color: var(--c-bg-tint);
+    background-image: radial-gradient(ellipse 320px 240px at 100% 0%, rgba(166, 31, 77, 0.28) 0%, transparent 72%);
+    background-repeat: no-repeat;
+    box-shadow: none;
+  }
+
   .navbar__links { display: none; flex-direction: column; gap: var(--sp-3); }
   .navbar__links.open {
     display: flex;
-    position: fixed;
-    inset: 0;
-    top: 0;
-    background: rgba(255,255,255,0.97);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    padding: var(--sp-9);
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-height: calc(100vh - 100%);
+    overflow-y: auto;
+    background-color: var(--c-bg-tint);
+    background-image:
+      radial-gradient(ellipse 320px 240px at 100% 0%, rgba(166, 31, 77, 0.28) 0%, transparent 72%),
+      radial-gradient(ellipse 280px 240px at 0% 100%, rgba(212, 175, 55, 0.26) 0%, transparent 72%);
+    background-repeat: no-repeat;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    z-index: 2000;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.12);
   }
+  .navbar__links.open li { display: block; }
   .navbar__links.open .navbar__link {
-    font-size: var(--text-lg);
-    font-weight: 700;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: var(--text-sm);
+    font-weight: 600;
     color: var(--c-text);
+    padding: var(--sp-4) var(--sp-6);
+    border-bottom: 1px solid var(--c-border);
   }
-  .navbar__hamburger { display: flex; z-index: 1001; position: relative; }
+  .navbar__links.open .navbar__link[aria-current="page"] {
+    color: var(--c-primary);
+  }
+  .navbar__links.open .navbar__link--cta {
+    text-align: left;
+    border-bottom: none;
+    border-radius: 0;
+    padding: var(--sp-4) var(--sp-6);
+    margin: 0;
+  }
+  .navbar__hamburger { display: flex; z-index: 2001; position: relative; }
 
   .hero__inner { padding: var(--sp-7) 0; gap: var(--sp-6); }
   .hero__image-frame { width: 280px; margin: 0 12px; }
