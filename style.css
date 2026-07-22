@@ -2270,6 +2270,7 @@ body > .floating-cta {
   }
   .navbar__hamburger { display: flex; z-index: 2001; position: relative; }
 
+  .hero { padding-top: 40px; }
   .hero__inner { padding: var(--sp-7) 0; gap: var(--sp-6); }
   .hero__image-frame { width: 280px; margin: 0 12px; }
   .hero__photo { height: 320px; }
@@ -2371,7 +2372,8 @@ body > .floating-cta {
   .timeline__item:not(:first-child)::before { top: 0; bottom: 50%; }
   .timeline__item:not(:last-child)::after { top: 50%; bottom: calc(var(--sp-7) * -1); }
 
-  .page-header { padding-top: 120px; }
+  .page-header { padding-top: 90px; }
+  .section--top-offset > .container { padding-top: 90px; }
   .pricing-grid { grid-template-columns: 1fr; }
   .testimonial__cta p { font-size: var(--text-sm); }
   .story__visual { gap: var(--sp-3); }
