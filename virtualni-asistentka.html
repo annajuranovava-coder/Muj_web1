@@ -40,8 +40,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <!-- Calendly popup widget: CSS i JS se donačítají dynamicky až na klik (viz script.js) -->
 </head>
 
 <body>
@@ -93,7 +92,7 @@
       <div class="page-header__visual reveal" aria-hidden="true">
         <div class="page-header__image-wrap">
           <img src="Obrazky/virtualni_asistentka.avif" alt="Virtuální asistentka – Anna Juranová" width="540"
-            height="675" />
+            height="675" fetchpriority="high" />
         </div>
       </div>
     </div>
@@ -447,7 +446,7 @@
   <section class="testimonial section" id="reference" aria-labelledby="testimonial-heading">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="section-title" id="cenik-heading">Co o mně říkají klientky?</h2>
+        <h2 class="section-title" id="testimonial-heading">Co o mně říkají klientky?</h2>
 
       </div>
 
@@ -500,7 +499,7 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="footer__watercolor" aria-hidden="true">
       <div class="footer__wc-blob footer__wc-blob--1"></div>
       <div class="footer__wc-blob footer__wc-blob--2"></div>

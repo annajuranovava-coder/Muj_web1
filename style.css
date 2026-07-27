@@ -666,51 +666,6 @@ body > *:not(.watercolor-bg):not(.cookie-bar):not(.cookie-modal):not(.floating-c
   100% { transform: translateY(-8px); }
 }
 
-/* Plovoucí badgy */
-.hero__badge {
-  position: absolute;
-  background: #fff;
-  border-radius: var(--r-md);
-  padding: var(--sp-3) var(--sp-4);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  align-items: center;
-  gap: var(--sp-2);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  border: 1px solid var(--c-border);
-}
-.hero__badge--1 {
-  top: 16%;
-  left: -60px;
-  animation: badgeFloat 5s ease-in-out infinite alternate;
-}
-.hero__badge--2 {
-  bottom: 18%;
-  right: -50px;
-  animation: badgeFloat 6s ease-in-out infinite alternate-reverse;
-}
-.hero__badge-num {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--c-primary);
-  line-height: 1;
-}
-.hero__badge-icon { font-size: 1.4rem; }
-.hero__badge-label {
-  font-size: 0.72rem;
-  color: var(--c-muted);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  line-height: 1.2;
-  max-width: 80px;
-}
-@keyframes badgeFloat {
-  0%   { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
-}
-
 /* ---- 10. INTRO CARDS ------------------------------------- */
 .intro__grid {
   display: grid;
@@ -2165,8 +2120,6 @@ body > .floating-cta {
   .hero__visual { order: -1; }
   .hero__image-frame { width: 320px; }
   .hero__photo { height: 380px; }
-  .hero__badge--1 { left: -20px; }
-  .hero__badge--2 { right: -20px; }
 
   .intro__grid { grid-template-columns: 1fr 1fr; }
   .help__grid  { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
@@ -2274,7 +2227,6 @@ body > .floating-cta {
   .hero__inner { padding: var(--sp-7) 0; gap: var(--sp-6); }
   .hero__image-frame { width: 280px; margin: 0 12px; }
   .hero__photo { height: 320px; }
-  .hero__badge { display: none; }
   .hero__deco-ring { inset: -10px; }
   .hero__deco-dot--1 { width: 12px; height: 12px; top: -4px; right: 12px; }
   .hero__deco-dot--2 { width: 8px; height: 8px; bottom: 12px; left: -4px; }

@@ -38,8 +38,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <!-- Calendly popup widget: CSS i JS se donačítají dynamicky až na klik (viz script.js) -->
 </head>
 
 <body>
@@ -159,8 +158,8 @@
         <!-- Image col s image mask -->
         <div class="story__visual reveal">
           <div class="story__image-mask">
-            <img src="Obrazky/muj_pribeh (1).avif" alt="Anna Juranová – Můj příběh" class="story__photo" width="460"
-              height="560" />
+            <img src="Obrazky/muj_pribeh%20(1).avif" alt="Anna Juranová – Můj příběh" class="story__photo" width="460"
+              height="560" fetchpriority="high" />
           </div>
           <!-- Dekorativní prvky -->
           <div class="story__deco-blob" aria-hidden="true"></div>
@@ -168,7 +167,7 @@
 
           <!-- Druhá fotka – stejný rámeček, posazená vpravo dole -->
           <div class="story__image-mask story__image-mask--sm">
-            <img src="Obrazky/muj_pribeh_2 (1).avif" alt="Anna Juranová" class="story__photo" loading="lazy" width="920"
+            <img src="Obrazky/muj_pribeh_2%20(1).avif" alt="Anna Juranová" class="story__photo" loading="lazy" width="920"
               height="420" />
           </div>
         </div>
@@ -178,7 +177,7 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="footer__watercolor" aria-hidden="true">
       <div class="footer__wc-blob footer__wc-blob--1"></div>
       <div class="footer__wc-blob footer__wc-blob--2"></div>

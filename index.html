@@ -40,8 +40,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <!-- Calendly popup widget: CSS i JS se donačítají dynamicky až na klik (viz script.js) -->
 
   <!-- Structured data – LocalBusiness -->
   <script type="application/ld+json">
@@ -139,8 +138,8 @@
       <!-- Pravý sloupec – foto s image mask -->
       <div class="hero__visual reveal" aria-hidden="true">
         <div class="hero__image-frame">
-          <img src="Obrazky/hero_sekce (1).avif" alt="Anna Juranová – virtuální asistentka a webařka"
-            class="hero__photo" width="480" height="600" />
+          <img src="Obrazky/hero_sekce%20(1).avif" alt="Anna Juranová – virtuální asistentka a webařka"
+            class="hero__photo" width="480" height="600" fetchpriority="high" />
           <!-- Dekorativní pruhy -->
           <div class="hero__deco-ring"></div>
           <div class="hero__deco-dot hero__deco-dot--1"></div>
@@ -262,7 +261,7 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="footer__watercolor" aria-hidden="true">
       <div class="footer__wc-blob footer__wc-blob--1"></div>
       <div class="footer__wc-blob footer__wc-blob--2"></div>

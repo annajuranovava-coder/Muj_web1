@@ -235,15 +235,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ============================================================
      7b. CALENDLY – otevře rezervaci jako popup místo nové záložky
-     Skript se donačte až při prvním kliknutí (ne hned při načtení
-     stránky), aby se cookies/tracking od Calendly nespouštěly
-     bez souhlasu uživatele – viz cookie lišta (sekce 5b).
+     Skript i styl se donačtou až při prvním kliknutí (ne hned při
+     načtení stránky), aby se cookies/tracking od Calendly
+     nespouštěly bez souhlasu uživatele (viz cookie lišta, sekce 5b)
+     a aby widget.css neblokoval vykreslení stránky zbytečně.
   ============================================================ */
   let calendlyWidgetPromise = null;
 
   function loadCalendlyWidget() {
     if (!calendlyWidgetPromise) {
       calendlyWidgetPromise = new Promise((resolve) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://assets.calendly.com/assets/external/widget.css';
+        document.head.appendChild(link);
+
         const script = document.createElement('script');
         script.src = 'https://assets.calendly.com/assets/external/widget.js';
         script.async = true;
@@ -315,34 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ============================================================
-     9. ANIMACE čísel v badge (hero section)
-  ============================================================ */
-  const badges = document.querySelectorAll('.hero__badge-num');
-  const badgeObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const target = parseInt(entry.target.textContent, 10);
-          if (isNaN(target)) return;
-          let current = 0;
-          const step  = Math.ceil(target / 20);
-          const timer = setInterval(() => {
-            current = Math.min(current + step, target);
-            entry.target.textContent = current;
-            if (current >= target) clearInterval(timer);
-          }, 60);
-          badgeObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  badges.forEach((b) => badgeObserver.observe(b));
-
-
-  /* ============================================================
-     10. TIMELINE LINE – čára začíná/končí přesně u první/poslední ikony
+     9. TIMELINE LINE – čára začíná/končí přesně u první/poslední ikony
   ============================================================ */
   function setTimelineLineBounds() {
     document.querySelectorAll('.timeline').forEach((timeline) => {

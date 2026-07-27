@@ -41,8 +41,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <!-- Calendly popup widget: CSS i JS se donačítají dynamicky až na klik (viz script.js) -->
 </head>
 
 <body>
@@ -94,7 +93,7 @@
       </div>
       <div class="page-header__visual reveal" aria-hidden="true">
         <div class="page-header__image-wrap">
-          <img src="Obrazky/tvorba_webu.avif" alt="Tvorba webu – Anna Juranová" width="1200" height="1800" />
+          <img src="Obrazky/tvorba_webu.avif" alt="Tvorba webu – Anna Juranová" width="1200" height="1800" fetchpriority="high" />
         </div>
       </div>
     </div>
@@ -457,7 +456,7 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="footer__watercolor" aria-hidden="true">
       <div class="footer__wc-blob footer__wc-blob--1"></div>
       <div class="footer__wc-blob footer__wc-blob--2"></div>
