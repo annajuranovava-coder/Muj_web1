@@ -235,12 +235,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ============================================================
      7b. CALENDLY – otevře rezervaci jako popup místo nové záložky
+     Skript se donačte až při prvním kliknutí (ne hned při načtení
+     stránky), aby se cookies/tracking od Calendly nespouštěly
+     bez souhlasu uživatele – viz cookie lišta (sekce 5b).
   ============================================================ */
+  let calendlyWidgetPromise = null;
+
+  function loadCalendlyWidget() {
+    if (!calendlyWidgetPromise) {
+      calendlyWidgetPromise = new Promise((resolve) => {
+        const script = document.createElement('script');
+        script.src = 'https://assets.calendly.com/assets/external/widget.js';
+        script.async = true;
+        script.onload = () => resolve();
+        document.head.appendChild(script);
+      });
+    }
+    return calendlyWidgetPromise;
+  }
+
   document.querySelectorAll('.js-calendly-popup').forEach((link) => {
     link.addEventListener('click', (e) => {
-      if (!window.Calendly) return; // widget.js ještě nenaběhl – necháme normální odkaz
       e.preventDefault();
-      window.Calendly.initPopupWidget({ url: link.href });
+      loadCalendlyWidget().then(() => {
+        window.Calendly.initPopupWidget({ url: link.href });
+      });
     });
   });
 
