@@ -41,9 +41,9 @@ ErrorDocument 404 /404.html
   # Přesměruje (302, dočasně) úplně vše na /udrzba.html, kromě
   # samotné stránky údržby a favicony.
   # ================================================================
-  RewriteCond %{REQUEST_URI} !^/udrzba\.html$
+  RewriteCond %{REQUEST_URI} !^/udrzba(\.html)?$
   RewriteCond %{REQUEST_URI} !^/favicon\.svg$
-  RewriteRule ^ /udrzba.html [R=302,L]
+  RewriteRule ^ /udrzba [R=302,L]
   # ================================================================
   # ÚDRŽBA WEBU – KONEC
   # ================================================================
